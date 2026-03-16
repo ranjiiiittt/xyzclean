@@ -53,9 +53,9 @@ const industryIcons = [
   "store",
   "building",
   "medical",
-  "star",
+  "childcare",
   "fitness",
-  "key",
+  "construction",
 ] as const;
 
 const whyChooseIcons = [
@@ -398,14 +398,20 @@ function IndustryIcon({
           />
         </svg>
       );
-    case "star":
+    case "childcare":
       return (
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path
-            d="m12 4.8 2.1 4.2 4.6.7-3.3 3.2.8 4.6-4.2-2.2-4.2 2.2.8-4.6-3.3-3.2 4.6-.7L12 4.8Z"
+            d="M7.4 11.1a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6ZM16.6 11.1a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6ZM12 9.8a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4Z"
             fill="none"
             stroke="currentColor"
-            strokeLinejoin="round"
+            strokeWidth="1.8"
+          />
+          <path
+            d="M4.8 17.9c.8-1.8 2.4-2.9 4.2-2.9 1.3 0 2.5.5 3.4 1.5M12.2 16.4c.9-.9 2-1.4 3.2-1.4 1.8 0 3.4 1.1 4.2 2.9"
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
             strokeWidth="1.8"
           />
         </svg>
@@ -423,11 +429,11 @@ function IndustryIcon({
           />
         </svg>
       );
-    case "key":
+    case "construction":
       return (
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path
-            d="M14.8 8.4a3.9 3.9 0 1 1-2.2 7.1L9 19H6.8v-2.1H4.7v-2.1H7l3.6-3.6a3.8 3.8 0 0 1 4.2-2.8Z"
+            d="M5.8 18.5h12.4M8.2 18.5v-4.6l3.8-2.5 3.8 2.5v4.6"
             fill="none"
             stroke="currentColor"
             strokeLinecap="round"
@@ -435,11 +441,12 @@ function IndustryIcon({
             strokeWidth="1.8"
           />
           <path
-            d="M16.6 8.8h.1"
+            d="M8.8 9.9h6.4l-1.2-2.6H10l-1.2 2.6ZM10.3 7.3V5.8h3.4v1.5"
             fill="none"
             stroke="currentColor"
             strokeLinecap="round"
-            strokeWidth="2.2"
+            strokeLinejoin="round"
+            strokeWidth="1.8"
           />
         </svg>
       );
