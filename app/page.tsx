@@ -58,6 +58,15 @@ const industryIcons = [
   "key",
 ] as const;
 
+const whyChooseIcons = [
+  "message",
+  "plan",
+  "spark",
+  "clock",
+  "checklist",
+  "team",
+] as const;
+
 const buyerGroups = [
   "Homeowners and busy households",
   "Renters moving out and property managers",
@@ -437,6 +446,138 @@ function IndustryIcon({
   }
 }
 
+function WhyChooseIcon({
+  icon,
+}: {
+  icon: (typeof whyChooseIcons)[number];
+}) {
+  switch (icon) {
+    case "message":
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M6 6.2h12c1 0 1.8.8 1.8 1.8v7.1c0 1-.8 1.8-1.8 1.8H11l-4.8 3v-3H6c-1 0-1.8-.8-1.8-1.8V8c0-1 .8-1.8 1.8-1.8Z"
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.8"
+          />
+          <path
+            d="M8.6 10h6.8M8.6 13.2h4.4"
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeWidth="1.8"
+          />
+        </svg>
+      );
+    case "plan":
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect
+            x="5"
+            y="4.5"
+            width="14"
+            height="15"
+            rx="2.6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+          />
+          <path
+            d="M8 8.2h8M8 11.7h8M8 15.2h5"
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeWidth="1.8"
+          />
+        </svg>
+      );
+    case "spark":
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m12 4.5 1.4 3.6L17 9.5l-3.6 1.4L12 14.5l-1.4-3.6L7 9.5l3.6-1.4L12 4.5ZM18.2 14.8l.8 2 .9.4-.9.4-.8 2-.8-2-.9-.4.9-.4.8-2ZM6 15.2l1 2.5 2.5 1-2.5 1L6 22.2l-1-2.5-2.5-1 2.5-1 1-2.5Z"
+            fill="none"
+            stroke="currentColor"
+            strokeLinejoin="round"
+            strokeWidth="1.8"
+          />
+        </svg>
+      );
+    case "clock":
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle
+            cx="12"
+            cy="12"
+            r="7.5"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+          />
+          <path
+            d="M12 7.8v4.5l3 1.8"
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.8"
+          />
+        </svg>
+      );
+    case "checklist":
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect
+            x="6.2"
+            y="4.5"
+            width="11.6"
+            height="15"
+            rx="2.4"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+          />
+          <path
+            d="M9.2 8.6h4.8M9.2 12h4.8M9.2 15.4h4.8"
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeWidth="1.8"
+          />
+          <path
+            d="m5 8.6.8.8 1.3-1.4m-2.1 4.8.8.8 1.3-1.4"
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.8"
+          />
+        </svg>
+      );
+    case "team":
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M9 11.3a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4ZM15.7 10.3a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4Z"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+          />
+          <path
+            d="M4.8 18.2c.9-2.1 2.8-3.3 4.9-3.3s4 1.2 4.9 3.3M14.1 18.2c.6-1.5 1.9-2.4 3.4-2.4 1 0 1.9.3 2.7 1"
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeWidth="1.8"
+          />
+        </svg>
+      );
+  }
+}
+
 export default function Home() {
   return (
     <main id="top">
@@ -612,9 +753,14 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="info-grid">
-              {homePage.whyChooseUs.map((item) => (
-                <article className="info-card" key={item}>
+            <div className="info-grid why-choose-grid">
+              {homePage.whyChooseUs.map((item, index) => (
+                <article className="info-card why-choose-card" key={item}>
+                  <span className="why-choose-card__icon" aria-hidden="true">
+                    <WhyChooseIcon
+                      icon={whyChooseIcons[index % whyChooseIcons.length]}
+                    />
+                  </span>
                   <p>{item}</p>
                 </article>
               ))}
