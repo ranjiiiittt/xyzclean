@@ -1,0 +1,28 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="720" rx="42" fill="url(#bg)"/>
+  <path d="M257 203L321 154L438 147L515 178L609 180L705 260L691 374L739 463L674 545L571 562L482 525L411 531L355 497L301 434L221 399L210 315L257 203Z" fill="url(#land)" stroke="#2E6F8A" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="351" cy="454" r="18" fill="#0F7A9D"/>
+  <circle cx="489" cy="430" r="18" fill="#53B49D"/>
+  <circle cx="604" cy="329" r="18" fill="#0F7A9D"/>
+  <circle cx="643" cy="271" r="18" fill="#53B49D"/>
+  <circle cx="546" cy="225" r="18" fill="#0F7A9D"/>
+  <circle cx="670" cy="485" r="18" fill="#0F7A9D"/>
+  <circle cx="761" cy="525" r="13" fill="#53B49D"/>
+  <path d="M351 454L489 430L604 329L643 271" stroke="#2E6F8A" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 16"/>
+  <path d="M489 430L670 485L761 525" stroke="#2E6F8A" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 16"/>
+  <rect x="84" y="91" width="234" height="132" rx="26" fill="rgba(255,251,246,0.82)"/>
+  <text x="116" y="138" fill="#0F4D69" font-family="Arial, sans-serif" font-size="26" font-weight="700">Metro coverage</text>
+  <text x="116" y="178" fill="#4A6D7D" font-family="Arial, sans-serif" font-size="20">Sydney, Melbourne, Brisbane, Perth,</text>
+  <text x="116" y="208" fill="#4A6D7D" font-family="Arial, sans-serif" font-size="20">Adelaide, Canberra, Gold Coast, Darwin</text>
+  <defs>
+    <linearGradient id="bg" x1="92" y1="62" x2="857" y2="655" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1FAFF"/>
+      <stop offset="1" stop-color="#D6EDF8"/>
+    </linearGradient>
+    <linearGradient id="land" x1="255" y1="150" x2="701" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7E8D5"/>
+      <stop offset="0.52" stop-color="#DDF0E8"/>
+      <stop offset="1" stop-color="#D2EAF7"/>
+    </linearGradient>
+  </defs>
+</svg>

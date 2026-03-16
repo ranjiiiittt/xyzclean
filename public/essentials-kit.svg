@@ -1,0 +1,18 @@
+<svg width="620" height="460" viewBox="0 0 620 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="620" height="460" rx="34" fill="#FBFEFD"/>
+  <ellipse cx="310" cy="382" rx="204" ry="28" fill="#E2F1EB"/>
+  <rect x="122" y="232" width="376" height="112" rx="30" fill="#FFFDFB"/>
+  <rect x="144" y="252" width="332" height="74" rx="22" fill="#F4FAF8"/>
+  <rect x="174" y="120" width="74" height="128" rx="26" fill="#BDE5E7"/>
+  <rect x="195" y="104" width="32" height="26" rx="10" fill="#E6F5FB"/>
+  <rect x="280" y="156" width="64" height="92" rx="22" fill="#D8EFE7"/>
+  <rect x="300" y="136" width="24" height="32" rx="8" fill="#DFF4EC"/>
+  <rect x="384" y="136" width="58" height="112" rx="24" fill="#F4E7D9"/>
+  <rect x="404" y="118" width="18" height="24" rx="8" fill="#F7EFE6"/>
+  <rect x="182" y="272" width="110" height="24" rx="12" fill="#FFFFFF"/>
+  <rect x="304" y="272" width="112" height="24" rx="12" fill="#FFFFFF"/>
+  <path d="M152 146C171.882 146 188 162.118 188 182V188H116V182C116 162.118 132.118 146 152 146Z" fill="#D4EEF0"/>
+  <path d="M434 90L436 96L442 98L436 100L434 106L432 100L426 98L432 96L434 90Z" fill="#8BC7D5"/>
+  <path d="M476 128L478 134L484 136L478 138L476 144L474 138L468 136L474 134L476 128Z" fill="#8BC7D5"/>
+  <rect x="166" y="320" width="290" height="10" rx="5" fill="#E0EFEB"/>
+</svg>
