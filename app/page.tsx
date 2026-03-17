@@ -281,11 +281,7 @@ function TrustPointIcon({
   }
 }
 
-function IndustryIcon({
-  icon,
-}: {
-  icon: (typeof industryIcons)[number];
-}) {
+function IndustryIcon({ icon }: { icon: (typeof industryIcons)[number] }) {
   switch (icon) {
     case "home":
       return (
@@ -453,11 +449,7 @@ function IndustryIcon({
   }
 }
 
-function WhyChooseIcon({
-  icon,
-}: {
-  icon: (typeof whyChooseIcons)[number];
-}) {
+function WhyChooseIcon({ icon }: { icon: (typeof whyChooseIcons)[number] }) {
   switch (icon) {
     case "message":
       return (
@@ -622,7 +614,7 @@ export default function Home() {
         <div className="hero-stage">
           <div className="hero-stage__card hero-stage__card--main">
             <Image
-              src="/hero-suite.svg"
+              src="/heroMainImage.png"
               alt="Freshly presented living room after professional cleaning"
               width={760}
               height={640}
@@ -647,10 +639,10 @@ export default function Home() {
 
           <div className="hero-stage__card hero-stage__card--accent">
             <Image
-              src="/essentials-kit.svg"
+              src="/heroAccentImage.png"
               alt="Premium cleaning essentials and folded towels"
-              width={310}
-              height={220}
+              width={1536}
+              height={1024}
             />
           </div>
         </div>
@@ -699,10 +691,10 @@ export default function Home() {
           <div className="section-shell__visual">
             <article className="content-card content-card--media">
               <Image
-                src="/office-lounge.svg"
+                src="/brandPromiseImage.png"
                 alt="Polished reception and office lounge space"
-                width={760}
-                height={620}
+                width={1536}
+                height={1024}
               />
               <div className="content-card__body">
                 <p className="stack-label">Who we help</p>
@@ -777,10 +769,10 @@ export default function Home() {
           <div className="section-shell__visual">
             <article className="content-card content-card--media">
               <Image
-                src="/quality-checklist.svg"
+                src="/whyChooseUsImage.png"
                 alt="Checklist and quality control illustration"
-                width={760}
-                height={620}
+                width={1536}
+                height={1024}
               />
               <div className="content-card__body">
                 <p className="stack-label">Quality control</p>
@@ -904,10 +896,10 @@ export default function Home() {
           <div className="section-shell__visual">
             <article className="content-card content-card--media">
               <Image
-                src="/australia-coverage.svg"
+                src="/serviceAreasImage.png"
                 alt="Australia service area illustration"
-                width={760}
-                height={620}
+                width={1536}
+                height={1024}
               />
             </article>
           </div>
